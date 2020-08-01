@@ -1,0 +1,76 @@
+<html>
+<head>
+<script language="javascript">
+function greatest(f,a,b,c)
+{
+	var n1=parseInt(a);
+	var n2=parseInt(b);
+	var n3=parseInt(c);
+	var greatest=0;
+	if(n1>n2)
+	{
+		if(n1>n3)
+		{
+			greatest=n1;
+		}
+		else
+		{
+			greatest=n3;
+		}
+	}
+	else
+		if(n2>n3)
+		{
+			greatest=n2;
+		}
+	else
+	{
+		greatest=n3;
+	}
+	f.g.value=greatest;
+}
+function smallest(f,a,b,c)
+{
+	var n1=parseInt(a);
+	var n2=parseInt(b);
+	var n3=parseInt(c);
+	var smallest=0;
+	if(n1<n2)
+	{
+		if(n1<n3)
+		{
+			smallest=n1;
+		}
+		else
+		{
+			smallest=n3;
+		}
+	}
+	else
+		if(n2<n3)
+		{
+			smallest=n2;
+		}
+	else
+	{
+		smallest=n3;
+	}
+	f.g.value=smallest;
+}
+</script>
+</head>
+<body>
+<h1> <center> To find the greatest of three numbers</center></h1>
+<h2> Enter three numbers:</h2>
+<h3>
+<form>
+first number:<input type="text" name=num1><br>
+Second number:<input type="text" name=num2><br>
+Third number:<input type="text" name=num3><br>
+<input type="button" value="greatest" onclick="greatest(this.form,num1.value,num2.value,num3.value)">
+<input type="button" value="smallest" onclick="smallest(this.form,num1.value,num2.value,num3.value)">
+<input type="text" name="g">
+</form>
+</h3>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>OnBlur</title>
+<script language="javascript">
+<!--
+function mandatory(x)
+{
+	if (x.value==" ")
+	{
+		alert("field "+x.name+" may not be left blank")
+	}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF"
+<form>
+<br>Code.............:<input type="text" name="code" size=5 maxlength=5 onBlur="mandatory(this)">
+<br>Name.............:<input type="text" name="name" value=" " size=5 maxlength=5 onBlur="mandatory(this)">
+<br>Position.............:<input type="text" name="Position" value=" " size=5 maxlength=5 onBlur="mandatory(this)">
+<br>Telephone.............:<input type="text" name="Telephone" value=" " size=5 maxlength=5 onBlur="mandatory(this)">
+<br>Extension.............:<input type="text" name="Extension" value=" " size=5 maxlength=5 onBlur="mandatory(this)">
+</form>
+</body>
+</html>

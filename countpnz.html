@@ -1,0 +1,39 @@
+<html>
+<head>
+<script language="javascript">
+	function calculate(form)
+	{
+		var numbers=form.list.value;
+		document.write(numbers);
+		var arr=numbers.split(",");
+		var i=0;
+		var pos=0;
+		var neg=0;
+		var zeros=0;
+		while(i<arr.length)
+		{
+			if(arr[i]>0)
+				pos+=1;
+			if(arr[i]<0)
+				neg+=1;
+			if(arr[i]==0)
+				zeros+=1;
+			i++;
+			document.write(zeros,pos,neg);
+			document.write("<br>")
+		}
+		document.write("Positives="+pos+"<br>");
+		document.write("Negatives="+neg+"<br>");
+		document.write("Zeros="+zeros+"<br>");
+	}
+</script>
+</head>
+<body>
+<form>
+enter the numbers:
+<input name="list" type="text">
+<input type="button" value="calculate" onclick="calculate(this.form)">
+</form>
+</body>
+</html>
+		

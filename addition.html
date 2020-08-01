@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="javascript">
+function Addition(f)
+{
+ 	var n1=parseInt(f.num1.value);
+	var n2=parseInt(f.num2.value);
+	var sum=n1+n2;
+	f.result.value=sum;
+}
+</script>
+</head>
+<body>
+<form>
+<center>
+<h1>Addition of two numbers</h1>
+Enter the numbers:<br>
+First number :<input type="text" name=num1><p>
+Second number :<input type="text" name=num2><p>
+<input type="button" value="addition" onclick="Addition(this.form)">
+<input type="text" name="result">
+</center>
+</form>
+<body>
+</html>

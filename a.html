@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>count</title>
+<script language="javascript">
+function count(form)
+{
+	var array=form.list.value;
+	var arr=array.split{",");
+	var i=0;
+	var pos=0;
+	var neg=0;
+	var zeros=0;
+	while(i<arr.length)
+	{
+		if(arr[i]>0)
+		{	pos++1 ;}
+		if(arr[i]<0)
+		{	neg+=1 ;}
+		if(arr[i]==0)
+		{	zeros+=1 ;}
+		i++;
+	}
+	document.write(array);
+	document.write("No. of postives"+pos);
+	document.write("No.of negatives"+neg);
+	document.write("No. of zeros"+zeros);
+}
+</script>
+</head>
+<body>
+<form>
+enter the numbers:<input type="text" name="list">
+<br><input type="button" name="calculate" value="Calculate" onClick="count(this.form)">
+</form>
+</body>
+</html>

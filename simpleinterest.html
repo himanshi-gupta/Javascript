@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript">
+function SI(f)
+{
+	var p=f.p.value;
+	var r=f.r.value;
+	var t=f.t.value;
+	var si=p*r*t/100;
+	f.si.value=si;	
+}
+</script>
+</head>
+<body>
+<form>
+<center>
+<h1>calculation of simple interest</h1>
+Principle :<input type="text" name=p><p>
+Rate :<input type="text" name=r><p>
+Time :<input type="text" name=t><p>
+<input type="button" value="Simple interest" onclick=SI(this.form)>
+<input type="text" name=si>
+</center>
+</form>
+</body>
+</html>

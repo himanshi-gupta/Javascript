@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>OnChange</title>
+<script language="javascript">
+<!--
+function mandatory(x)
+{
+	if (x.value==" ")
+	{
+		alert("field "+x.name+" may not be left blank")
+	}
+}
+function testname(x)
+{
+	if (x.value.length<5)
+	{	
+		alert("field "+x.name+" may not have less than 5 characters")
+	}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF"
+<form>
+<br>Code.............:<input type="text" name="code" size=5 maxlength=5 onBlur="mandatory(this)">
+<br>Name.............:<input type="text" name="name" value=" " size=30 maxlength=30 onBlur="mandatory(this)" onChange="testname(this)">
+<br>Position.............:<input type="text" name="Position" value=" " size=20 maxlength=5 onBlur="mandatory(this)">
+<br>Telephone.............:<input type="text" name="Telephone" value=" " size=10 maxlength=5 onBlur="mandatory(this)">
+<br>Extension.............:<input type="text" name="Extension" value=" " size=25 maxlength=15 onBlur="mandatory(this)">
+</form>
+</body>
+</html>

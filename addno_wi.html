@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+	function addnumbers(f,a,b)
+	{
+		sum=0;
+		sum=parseInt(a)+parseInt(b);
+		f.res.value=sum;
+	}
+</script>
+</head>
+<body>
+<form>
+value1=<input type="text" name="num1">
+value1=<input type="text" name="num2">
+<input type="button" value="submit" onclick="addnumbers(this.form,num1.value,num2.value)"><br>
+Answer=<input type="text" name="res" ><br>
+</form></body>
+</html>

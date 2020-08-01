@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="javascript">
+function factorial(f)
+{
+	var no=f.num.value;
+	var fact=1;
+	while(no>1)
+	{
+		fact*=no;
+		no-=1;
+	}
+	f.result.value=fact;
+}
+</script>
+</head>
+<body>
+<form>
+<center>
+<h1>Calculate the factorial of the givan no.</h1>
+Enter the no :<input type="text" name=num>
+<p><input type="button" value="factorial" onclick="factorial(this.form)">
+<input type="text" name="result">
+</center>
+</form>
+</body>
+</html>

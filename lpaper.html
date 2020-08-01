@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="javascript">
+function check(f,n)
+{
+	var age=parseInt(n);
+	var nation=f.txtNation.value;
+	if( age>=18 && nation=="Indian")
+	{
+		alert("Eligible for voting");
+	}
+	else
+	{
+		alert("Not eligible to vote");
+	}
+}
+</script>
+</head>
+<body>
+<h1>Enter the details</h1>
+<form >
+Enter your nationality : <input type="text" value=" " name="txtNation"><br>
+Enter your age : <input type="text" value=" " name="txtAge"><br>
+<input type="button" name="Send Details" value="Send details" onclick="check(this.form,txtAge.value)">
+</form>
+</body>
+</html>
